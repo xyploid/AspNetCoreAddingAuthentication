@@ -49,7 +49,7 @@ namespace WishList.Controllers
                 var result = _userManager.CreateAsync(appuser, registerViewModel.Password);
                 if (result.Result.Succeeded)
                 {
-                    return RedirectToAction("Index", "HomeController");
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {
