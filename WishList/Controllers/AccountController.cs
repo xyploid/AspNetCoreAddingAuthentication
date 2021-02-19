@@ -58,12 +58,12 @@ namespace WishList.Controllers
                         ModelState.AddModelError("Password", item.Description);
                     }
 
-                    return View("Register");
+                    return View("Register", registerViewModel);
                 }
             }
             else
             {
-                return View("Register");
+                return View("Register", registerViewModel);
             }
         }
     }
